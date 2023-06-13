@@ -15,12 +15,12 @@ then
         echo "The number of files are $numberFiles and the number of matching lines are $numberLines"
     else
         echo "Not a directory"
-        return 1
+        exit 1
     fi
 else
     echo "Total parameter: $#, not valid input"
     echo "To run bash script correctly, run by guide below:"
     echo "./finder.sh <directory looking>  <string looking>"
     echo "Good luck ;)"
-    return 1 
+    exit 1 
 fi
